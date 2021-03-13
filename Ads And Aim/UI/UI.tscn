@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UI/UI.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Right_CH" type="Line2D" parent="."]
+points = PoolVector2Array( 20, 0, 40, 0 )
+width = 2.5
+default_color = Color( 1, 1, 1, 1 )
+end_cap_mode = 2
+
+[node name="Left_CH" type="Line2D" parent="."]
+rotation = 3.14159
+points = PoolVector2Array( 20, 0, 40, 0 )
+width = 2.5
+default_color = Color( 1, 1, 1, 1 )
+end_cap_mode = 2
+
+[node name="Up_CH" type="Line2D" parent="."]
+rotation = -1.57079
+points = PoolVector2Array( 20, 0, 40, 0 )
+width = 2.5
+default_color = Color( 1, 1, 1, 1 )
+end_cap_mode = 2
+
+[node name="Down_CH" type="Line2D" parent="."]
+rotation = 1.57079
+points = PoolVector2Array( 20, 0, 40, 0 )
+width = 2.5
+default_color = Color( 1, 1, 1, 1 )
+end_cap_mode = 2
